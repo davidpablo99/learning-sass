@@ -1,0 +1,57 @@
+/* O que é nesting e como usar
+1 - O nesting é uma forma mais organizada de usar algo que já existe no CSS, que é quando você seleciona um elemento dentro de outro elemento para manipular ele.
+O ruim disso é que você precisa iniciar novamente a classe na linha abaixo para manipular outro elemento, no nesting é muito mais simples.
+.classe1 ul{	background-color: red;
+}
+
+.classe1 li{
+	background-color: blue;
+}
+​
+2 - O nesting você abre o bloco que você quer, podendo ser uma ID, uma classe, um elemento em sí e colocando os elementos que você quer manipular dentro dele, dessa forma, você consegue manipular todos os elementos em um único bloco, facilitando muito para você!
+.classe1 {
+	ul{
+		background-color: red;
+	}
+
+	li{
+		background-color: blue;
+	]
+}
+​
+3 - Caso você queira pode até colocar um elemento button, para fazer o uso do nesting com ele também, facilitando ainda mais a manipulação dos elementos.
+.classe1 {
+	ul{
+		background-color: red;
+	}
+
+	li{
+		background-color: blue;
+	]
+
+	button{
+		background-color: green;
+		color: white;
+	}
+}
+​
+4 - Algo que se torna fácil com o uso do sass é o uso do hover, que você consegue fazer tranquilamente com apenas um & e:
+.classe1 {
+	ul{
+		background-color: red;
+	}
+
+	li{
+		background-color: blue;
+	]
+
+	button{
+		background-color: green;
+		color: white;
+
+		&:hover {
+			background-color: red;
+			transition: 1s;
+		}
+	}
+} */
